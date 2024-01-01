@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/0fa13ff134.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- container -->
+    <div id="container" class="container">
+        <div class="title">Javascript Quiz</div>
+        <div id="question" class="question"></div>
+        <label class="option">
+            <input type="radio" name="option" value="1" />
+            <span id="Option1"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="2"/>
+            <span id="Option2"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="3"/>
+            <span id="Option3"></span>
+        </label>
+
+        <label class="option">
+            <input type="radio" name="option" value="4"/>
+            <span id="Option4"></span>
+        </label>
+        <button type="button" id="nextQuestion" class="next-btn" onclick="loadNextQuestion()">Next Question</button>
+    </div>
+    <div id="result" class="container result"    style="display: none;">
+        <div id="score"></div>
+        <button type="button" class="restart" onclick="restart()">Restart</button>
+        <h5 class="jaga"><i>jegadeesh R</i></h5>
+    </div>
+    <div id="round" class="round" style="display: none;">
+        <h1 id="time" >0</h1>
+    </div>
+    <script src="./ous.js" ></script>
+    <script src="./main.js"></script>
+</body>
+</html>
